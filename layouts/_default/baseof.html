@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>
+			{{- block "title" . -}}
+				{{- partial "page-title.html" . -}}
+			{{- end -}}
+		</title>
+		<link rel="stylesheet" type="text/css" href="{{ relURL "styles.css" }}"/>
+		{{- partial "head-extra.html" . -}}
+	</head>
+	<body>
+		<header>
+			{{- partial "intro.html" . -}}
+		</header>
+		<main>
+			{{- block "main" . -}}{{- end -}}
+		</main>
+	</body>
+</html>

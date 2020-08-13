@@ -1,0 +1,7 @@
+{{- define "title" -}}
+	{{- partial "index-title.html" . -}}
+{{- end -}}
+{{- define "main" -}}
+	{{- .Content -}}
+	{{- partial "recent-releases.html" . -}}
+{{- end -}}

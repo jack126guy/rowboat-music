@@ -1,0 +1,3 @@
+{{- $releases := (where .Site.RegularPages "Section" "releases") -}}
+{{- $count := default 5 (.Site.Param "recentReleaseCount") -}}
+{{- partial "music-list.html" (first $count $releases) -}}

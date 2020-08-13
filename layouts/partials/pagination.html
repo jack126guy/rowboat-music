@@ -1,0 +1,6 @@
+{{- if .HasPrev -}}
+	<div><a href="{{ .Prev.URL }}">Newer</a></div>
+{{- end -}}
+{{- if .HasNext -}}
+	<div><a href="{{ .Next.URL }}">Older</a></div>
+{{- end -}}

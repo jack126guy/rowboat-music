@@ -1,0 +1,8 @@
+{{- $cover := relURL "/default_cover.png" -}}
+{{- with .Resources.GetMatch "cover.*" -}}
+	{{- $cover = .RelPermalink -}}
+{{- end -}}
+{{- with .Params.customCover -}}
+	{{- $cover = relURL . -}}
+{{- end -}}
+<div class="cover"><img src="{{ $cover }}" alt="Cover for &quot;{{ .Title | htmlEscape }}&quot;"/></div>

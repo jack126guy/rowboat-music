@@ -1,0 +1,11 @@
+name = "Rowboat Music"
+license = "MIT"
+licenselink = "https://github.com/jack126guy/rowboat-music/blob/master/LICENSE.txt"
+description = "Simple theme for presenting music releases and other works"
+homepage = "https://github.com/jack126guy/rowboat-music"
+tags = ["music"]
+features = []
+
+[author]
+name = "Half-Gray"
+homepage = "https://halfgray.xyz/"
