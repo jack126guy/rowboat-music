@@ -5,4 +5,4 @@
 {{- with .Params.customCover -}}
 	{{- $cover = relURL . -}}
 {{- end -}}
-<div class="cover"><img src="{{ $cover }}" alt="Cover for &quot;{{ .Title | htmlEscape }}&quot;"/></div>
+{{- $cover -}}
