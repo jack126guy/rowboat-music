@@ -51,6 +51,27 @@ h3 {
 .music-list-cover img {
 	height: 100%;
 }
+.pagination-previous, .pagination-next {
+	width: 5em;
+}
+.pagination-previous {
+	float: left;
+	text-align: left;
+}
+.pagination-previous a:before {
+	content: "\2190  ";
+}
+.pagination-next {
+	float: right;
+	text-align: right;
+}
+.pagination-next a:after {
+	content: " \2192";
+}
+.pagination-current {
+	margin: 0em 5em;
+	text-align: center;
+}
 @media print {
 	body {
 		max-width: 100%;
