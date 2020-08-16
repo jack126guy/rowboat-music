@@ -1,5 +1,10 @@
-<ul>
+<ul class="music-list">
 	{{- range . -}}
-		<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+		<li class="music-list-item">
+			<a href="{{ .RelPermalink }}">
+				<div class="music-list-cover"><img src="{{ partial "cover-url.html" . }}" alt=""/></div>
+				<div>{{ .Title }}</div>
+			</a>
+		</li>
 	{{- end -}}
 </ul>

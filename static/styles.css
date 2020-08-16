@@ -31,6 +31,26 @@ h3 {
 .cover-main img {
 	width: 100%;
 }
+.music-list {
+	list-style-type: none;
+	padding: 0em;
+}
+.music-list-item {
+	height: 10em;
+	margin: 1em 0em;
+	overflow: hidden;
+}
+.music-list-item div {
+	height: 100%;
+}
+.music-list-cover {
+	float: left;
+	width: 10em;
+	margin-right: 1em;
+}
+.music-list-cover img {
+	height: 100%;
+}
 @media print {
 	body {
 		max-width: 100%;
