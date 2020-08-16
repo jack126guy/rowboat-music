@@ -34,6 +34,9 @@ h3 {
 .cover-main img {
 	width: 100%;
 }
+.release-date {
+	font-style: italic;
+}
 .music-list {
 	list-style-type: none;
 	padding: 0em;
