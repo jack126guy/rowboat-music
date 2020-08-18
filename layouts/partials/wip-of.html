@@ -1,0 +1,4 @@
+{{- $wipOf := partial "get-referent.html" (dict "context" . "refParam" "wipof") -}}
+{{- with $wipOf -}}
+	<p>(WIP of <a href="{{ .RelPermalink }}">{{ .Title }}</a>)</p>
+{{- end -}}

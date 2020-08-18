@@ -1,0 +1,8 @@
+{{- $referent := false -}}
+{{- if .context.Param .refParam -}}
+	{{- $referents := where .context.Site.Pages "Params.refkey" (.context.Param .refParam) -}}
+	{{- if $referents -}}
+		{{- $referent = index $referents 0 -}}
+	{{- end -}}
+{{- end -}}
+{{- return $referent -}}

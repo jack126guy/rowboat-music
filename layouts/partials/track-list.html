@@ -1,0 +1,9 @@
+{{- $tracks := partial "get-referrers.html" (dict "context" . "refParam" "trackof" "sortParam" "tracknumber") -}}
+{{- with $tracks -}}
+	<h3>Track List</h3>
+	<ol>
+	{{- range . -}}
+		<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+	{{- end -}}
+	</ol>
+{{- end -}}

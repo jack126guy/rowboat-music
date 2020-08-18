@@ -1,0 +1,8 @@
+{{- $refs := slice -}}
+{{- if .context.Params.refkey -}}
+	{{- $refs = where .context.Site.Pages (print "Params." .refParam) .context.Params.refkey -}}
+{{- end -}}
+{{- if .sortParam -}}
+	{{- $refs = sort $refs (print "Params." .sortParam) -}}
+{{- end -}}
+{{- return $refs -}}
