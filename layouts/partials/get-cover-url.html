@@ -5,4 +5,4 @@
 {{- with .Params.customCover -}}
 	{{- $cover = relURL . -}}
 {{- end -}}
-{{- $cover -}}
+{{- return $cover -}}
