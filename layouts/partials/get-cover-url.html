@@ -1,4 +1,8 @@
 {{- $cover := relURL "/default_cover.png" -}}
+{{- $coverReferent := partial "get-referent.html" (dict "context" . "refParam" "coverof") }}
+{{- with $coverReferent -}}
+	{{- $cover = partial "get-cover-url.html" $coverReferent -}}
+{{- end -}}
 {{- with .Resources.GetMatch "cover.*" -}}
 	{{- $cover = .RelPermalink -}}
 {{- end -}}
