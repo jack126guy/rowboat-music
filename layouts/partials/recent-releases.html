@@ -1,5 +1,9 @@
 <h2>Recent Releases</h2>
 {{- $releases := (where .Site.RegularPages "Section" "releases") -}}
 {{- $count := default 5 (.Site.Param "recentReleaseCount") -}}
-{{- partial "music-list.html" (first $count $releases) -}}
-<p><a href="{{ relURL "/releases" }}">All releases&#8230;</a></p>
+{{- if $releases -}}
+	{{- partial "music-list.html" (first $count $releases) -}}
+	<p><a href="{{ relURL "/releases" }}">All releases&#8230;</a></p>
+{{- else -}}
+	<p>None yet&#8230;</p>
+{{- end -}}
