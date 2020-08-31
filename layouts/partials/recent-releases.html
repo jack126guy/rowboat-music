@@ -1,5 +1,6 @@
 <h2>Recent Releases</h2>
-{{- $releases := (where .Site.RegularPages "Section" "releases") -}}
+{{- $releaseSection := index (where .Site.Home.Pages "Section" "releases") 0 -}}
+{{- $releases := $releaseSection.Pages -}}
 {{- $count := default 5 (.Site.Param "recentReleaseCount") -}}
 {{- if $releases -}}
 	{{- partial "music-list.html" (first $count $releases) -}}

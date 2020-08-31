@@ -1,6 +1,7 @@
 {{- define "main" -}}
 	<h2>{{ .Title }}</h2>
 	{{- .Content -}}
-	{{- partial "music-list.html" .Paginator.Pages -}}
-	{{- partial "pagination.html" .Paginator -}}
+	{{- $paginator := .Paginate .Pages -}}
+	{{- partial "music-list.html" $paginator.Pages -}}
+	{{- partial "pagination.html" $paginator -}}
 {{- end -}}
