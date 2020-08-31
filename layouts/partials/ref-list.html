@@ -1,0 +1,14 @@
+{{- range $refType, $refList := .Params.refs -}}
+	{{- $title := title $refType -}}
+	{{- $refTypeConfig := index (default (dict) $.Site.Params.refs) $refType -}}
+	{{- with $refTypeConfig.title -}}
+		{{- $title = . -}}
+	{{- end -}}
+	<h3>{{ $title }}</h3>
+	<ol>
+	{{- range $refList -}}
+		{{- $refPage := $.GetPage . -}}
+		<li><a href="{{ $refPage.RelPermalink }}">{{ $refPage.Title }}</a></li>
+	{{- end -}}
+	</ol>
+{{- end -}}

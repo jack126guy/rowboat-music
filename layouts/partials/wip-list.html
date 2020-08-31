@@ -1,9 +1,0 @@
-{{- $wips := partial "get-referrers.html" (dict "context" . "refParam" "wipof") -}}
-{{- with $wips -}}
-	<h3>WIPs</h3>
-	<ul>
-	{{- range . -}}
-		<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-	{{- end -}}
-	</ul>
-{{- end -}}

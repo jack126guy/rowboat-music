@@ -3,10 +3,8 @@
 		<h2>{{ .Title }}</h2>
 		{{- partial "cover-main.html" . }}
 		{{- partial "release-date.html" . -}}
-		{{- partial "track-of.html" . -}}
-		{{- partial "wip-of.html" . -}}
+		{{- partial "ref-occurrences.html" . -}}
 		{{- .Content -}}
-		{{- partial "track-list.html" . -}}
-		{{- partial "wip-list.html" . -}}
+		{{- partial "ref-list.html" . -}}
 	</article>
 {{- end -}}

@@ -1,0 +1,15 @@
+{{- range $page := .Site.Pages -}}
+	{{- range $refType, $refList := .Params.refs -}}
+		{{- range $refList -}}
+			{{- if eq $ ($page.GetPage .) -}}
+				{{- $occurrenceFormat := printf "(In %s of %%s)" $refType -}}
+				{{- $refTypeConfig := index (default (dict) $.Site.Params.refs) $refType -}}
+				{{- with $refTypeConfig.occurrenceFormat -}}
+					{{- $occurrenceFormat = . -}}
+				{{- end -}}
+				{{- $pageLink := printf "<a href=\"%s\">%s</a>" $page.RelPermalink $page.Title -}}
+				<p>{{ printf $occurrenceFormat $pageLink | safeHTML }}</p>
+			{{- end -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}

@@ -1,4 +1,0 @@
-{{- $trackOf := partial "get-referent.html" (dict "context" . "refParam" "trackof") -}}
-{{- with $trackOf -}}
-	<p>(Track {{ $.Params.tracknumber }} of <a href="{{ .RelPermalink }}">{{ .Title }}</a>)</p>
-{{- end -}}
