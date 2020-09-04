@@ -5,7 +5,7 @@
 {{- with .Resources.GetMatch "cover.*" -}}
 	{{- $cover = .RelPermalink -}}
 {{- end -}}
-{{- with .Params.customCover -}}
+{{- with .Params.customcover -}}
 	{{- $cover = relURL . -}}
 {{- end -}}
 {{- return $cover -}}
