@@ -1,10 +1,10 @@
 {{- define "main" -}}
 	<article>
 		<h2>{{ .Title }}</h2>
-		{{- partial "cover-main.html" . }}
-		{{- partial "release-date.html" . -}}
-		{{- partial "ref-occurrences.html" . -}}
+		{{- partial "single/cover.html" . }}
+		{{- partial "single/release-date.html" . -}}
+		{{- partial "single/ref-occurrences.html" . -}}
 		{{- .Content -}}
-		{{- partial "ref-list.html" . -}}
+		{{- partial "single/ref-list.html" . -}}
 	</article>
 {{- end -}}

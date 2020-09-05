@@ -5,16 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>
 			{{- block "title" . -}}
-				{{- partial "page-title.html" . -}}
+				{{- partial "head/page-title.html" . -}}
 			{{- end -}}
 		</title>
-		<link rel="stylesheet" type="text/css" href="{{ relURL "styles.css" }}"/>
-		<link rel="stylesheet" type="text/css" href="{{ relURL "styles-custom.css" }}"/>
-		{{- partial "head-extra.html" . -}}
+		{{- partial "head/stylesheets.html" . -}}
+		{{- partial "head/extra.html" . -}}
 	</head>
 	<body>
 		<header>
-			{{- partial "intro.html" . -}}
+			{{- partial "intro/intro.html" . -}}
 		</header>
 		<main>
 			{{- block "main" . -}}{{- end -}}

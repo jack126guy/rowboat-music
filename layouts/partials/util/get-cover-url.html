@@ -1,6 +1,6 @@
 {{- $cover := relURL "/default_cover.png" -}}
 {{- with .Params.coverof -}}
-	{{- $cover = partial "get-cover-url.html" ($.GetPage .) -}}
+	{{- $cover = partial "util/get-cover-url.html" ($.GetPage .) -}}
 {{- end -}}
 {{- with .Resources.GetMatch "cover.*" -}}
 	{{- $cover = .RelPermalink -}}

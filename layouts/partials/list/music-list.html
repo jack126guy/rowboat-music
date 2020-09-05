@@ -2,7 +2,7 @@
 	{{- range . -}}
 		<li class="music-list-item">
 			<a href="{{ .RelPermalink }}">
-				<div class="music-list-cover"><img src="{{ partial "get-cover-url.html" . }}" alt=""/></div>
+				<div class="music-list-cover"><img src="{{ partial "util/get-cover-url.html" . }}" alt=""/></div>
 				<div>{{ .Title }}</div>
 			</a>
 		</li>

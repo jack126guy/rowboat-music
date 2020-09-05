@@ -1,7 +1,7 @@
 {{- define "title" -}}
-	{{- partial "index-title.html" . -}}
+	{{- partial "head/index-title.html" . -}}
 {{- end -}}
 {{- define "main" -}}
 	{{- .Content -}}
-	{{- partial "recent-releases.html" . -}}
+	{{- partial "widget/recent-releases.html" . -}}
 {{- end -}}

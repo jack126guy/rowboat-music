@@ -27,11 +27,11 @@ h3 {
 	font-size: 1em;
 	margin-top: 1.5em;
 }
-.cover-main {
+.main-cover {
 	max-width: 50%;
 	margin: 0em auto;
 }
-.cover-main img {
+.main-cover img {
 	width: 100%;
 }
 .release-date {

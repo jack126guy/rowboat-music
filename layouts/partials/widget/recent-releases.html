@@ -3,7 +3,7 @@
 {{- $releases := $releaseSection.Pages -}}
 {{- $count := default 5 (.Site.Param "recentReleaseCount") -}}
 {{- if $releases -}}
-	{{- partial "music-list.html" (first $count $releases) -}}
+	{{- partial "list/music-list.html" (first $count $releases) -}}
 	<p><a href="{{ relURL "/releases" }}">All releases&#8230;</a></p>
 {{- else -}}
 	<p>None yet&#8230;</p>
