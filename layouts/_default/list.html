@@ -1,5 +1,5 @@
 {{- define "main" -}}
-	<h2>{{ .Title }}</h2>
+	<h1>{{ .Title }}</h1>
 	{{- .Content -}}
 	{{- $paginator := .Paginate .Pages -}}
 	{{- partial "list/music-list.html" $paginator.Pages -}}

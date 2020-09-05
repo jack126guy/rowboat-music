@@ -4,7 +4,7 @@
 	{{- with $refTypeConfig.title -}}
 		{{- $title = . -}}
 	{{- end -}}
-	<h3>{{ $title }}</h3>
+	<h2>{{ $title }}</h2>
 	<ol>
 	{{- range $refList -}}
 		{{- $refPage := $.GetPage . -}}

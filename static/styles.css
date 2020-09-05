@@ -11,13 +11,18 @@ p, ul, ol {
 a {
 	text-decoration: none;
 }
-h1, h2, h3 {
+.site-title, h1, h2, h3 {
 	font-weight: bold;
 	margin-bottom: 0em;
 }
-h1 {
+.site-title {
+	text-align: center;
 	font-size: 2em;
 	margin-top: 0em;
+}
+h1 {
+	font-size: 2em;
+	margin-top: 0.75em;
 }
 h2 {
 	font-size: 1.5em;

@@ -1,4 +1,4 @@
-<h2>Recent Releases</h2>
+<h1>Recent Releases</h1>
 {{- $releaseSection := index (where .Site.Home.Pages "Section" "releases") 0 -}}
 {{- $releases := $releaseSection.Pages -}}
 {{- $count := default 5 (.Site.Param "recentReleaseCount") -}}
