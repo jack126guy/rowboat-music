@@ -11,6 +11,22 @@ p, ul, ol {
 a {
 	text-decoration: none;
 }
+.skip-to-main {
+	position: absolute;
+	width: 100%;
+}
+.skip-to-main a {
+	position: absolute;
+	border: 0.25em solid black;
+	padding: 0.5em;
+	background-color: white;
+	color: black;
+	z-index: 100;
+	left: -100em;
+}
+.skip-to-main a:focus {
+	left: 0em;
+}
 .site-title, h1, h2, h3 {
 	font-weight: bold;
 }
