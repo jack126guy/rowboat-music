@@ -1,2 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{{ relURL "styles.css" }}"/>
-<link rel="stylesheet" type="text/css" href="{{ relURL "styles-custom.css" }}"/>
+{{ $stylesheets := default (slice "styles.css") .Site.Params.stylesheets }}
+{{- range $stylesheets -}}
+	<link rel="stylesheet" type="text/css" href="{{ relURL . }}"/>
+{{- end -}}
