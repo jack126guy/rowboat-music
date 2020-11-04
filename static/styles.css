@@ -13,7 +13,7 @@ a {
 }
 .skip-to-main {
 	position: absolute;
-	width: 100%;
+	width: 25%;
 }
 .skip-to-main a {
 	position: absolute;
@@ -22,10 +22,10 @@ a {
 	background-color: white;
 	color: black;
 	z-index: 100;
-	left: -100em;
+	top: -100em;
 }
 .skip-to-main a:focus {
-	left: 0em;
+	top: 0em;
 }
 .site-title, h1, h2, h3 {
 	font-weight: bold;
