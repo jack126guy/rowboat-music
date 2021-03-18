@@ -4,7 +4,7 @@
 {{- $count := default 5 .Site.Params.recentReleaseCount -}}
 {{- if $releases -}}
 	{{- partial "list/music-list.html" (first $count $releases) -}}
-	<p><a href="{{ relURL "/releases" }}">All releases&#8230;</a></p>
+	{{- partial "widget/all-releases-link.html" . -}}
 {{- else -}}
-	<p>None yet&#8230;</p>
+	{{- partial "widget/no-releases-note.html" . -}}
 {{- end -}}
