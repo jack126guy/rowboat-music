@@ -1,0 +1,8 @@
+{{- define "main" -}}
+	<h1>{{ .Title }}</h1>
+	{{- .Content -}}
+	{{- $pages := where .Site.RegularPages ".Params.layout" "!=" "info" -}}
+	{{- $paginator := .Paginate $pages -}}
+	{{- partial "list/music-list.html" $paginator.Pages -}}
+	{{- partial "list/pagination.html" $paginator -}}
+{{- end -}}
