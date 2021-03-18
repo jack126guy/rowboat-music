@@ -1,3 +1,6 @@
 {{- define "main" -}}
-	{{ partial "single/info-main.html" . }}
+	<article>
+		<h1>{{ .Title }}</h1>
+		{{- .Content -}}
+	</article>
 {{- end -}}
