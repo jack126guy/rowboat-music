@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		{{- partial "head/common.html" . -}}
 		<title>
 			{{- block "title" . -}}
 				{{- partial "head/page-title.html" . -}}
 			{{- end -}}
 		</title>
-		{{- partial "head/stylesheets.html" . -}}
-		{{- partial "head/extra.html" . -}}
 	</head>
 	<body>
 		<header>
