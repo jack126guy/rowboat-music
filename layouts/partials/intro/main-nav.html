@@ -1,0 +1,9 @@
+{{- with .Site.Menus.main -}}
+<nav class="main-nav">
+	<ul>
+		{{- range . -}}
+			<li>{{ .Pre }}<a href="{{ .URL }}">{{ .Name }}</a>{{ .Post }}</li>
+		{{- end -}}
+	</ul>
+</nav>
+{{- end -}}
