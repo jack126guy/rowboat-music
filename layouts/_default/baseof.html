@@ -9,11 +9,13 @@
 		</title>
 	</head>
 	<body>
-		<header>
-			{{- partial "intro/intro.html" . -}}
-		</header>
-		<main id="main">
-			{{- block "main" . -}}{{- end -}}
-		</main>
+		<div class="body-overlay">
+			<header>
+				{{- partial "intro/intro.html" . -}}
+			</header>
+			<main id="main">
+				{{- block "main" . -}}{{- end -}}
+			</main>
+		</div>
 	</body>
 </html>

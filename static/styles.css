@@ -1,9 +1,12 @@
 body {
-	max-width: 50em;
-	margin: 0em auto;
+	margin: 0em;
 	padding: 1em;
 	font-family: sans-serif;
 	line-height: 1.5;
+}
+.body-overlay {
+	width: 60%;
+	margin: 0em auto;
 }
 p, ul, ol {
 	margin: 0.75em 0em;
@@ -107,8 +110,12 @@ h3 {
 	content: " \2192";
 }
 @media print {
-	body {
-		max-width: 100%;
-		padding: 0em;
+	.body-overlay {
+		width: 100%;
+	}
+}
+@media (max-width: 640px) {
+	.body-overlay {
+		width: 100%;
 	}
 }
