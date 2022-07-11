@@ -1,5 +1,5 @@
 <h1>Recent Releases</h1>
-{{- $releaseSection := index (where .Site.Home.Pages "Section" "releases") 0 -}}
+{{- $releaseSection := index (where .Site.Sections "Section" "releases") 0 -}}
 {{- $releases := $releaseSection.Pages -}}
 {{- $count := default 5 .Site.Params.recentReleaseCount -}}
 {{- if $releases -}}
