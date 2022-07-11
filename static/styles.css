@@ -46,7 +46,8 @@ a {
 	display: inline-block;
 	margin: 0.25em;
 	padding: 0.25em;
-	border-bottom: medium solid #000000;
+	border-bottom-width: medium;
+	border-bottom-style: solid;
 }
 h1 {
 	font-size: 2em;
