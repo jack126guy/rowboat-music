@@ -1,0 +1,16 @@
+<section class="taxonomies">
+	{{- range $taxonomyName, $taxonomy := .Site.Taxonomies -}}
+		{{- with index $.Params $taxonomyName -}}
+			{{- $taxonomyPage := $.Site.GetPage $taxonomyName -}}
+			<div>
+				<b>{{ $taxonomyPage.Title }}</b>:
+				<ul>
+					{{- range . -}}
+						{{- $termPage := $.Site.GetPage (printf "%s/%s" $taxonomyName .) -}}
+						<li><a href="{{ $termPage.RelPermalink }}">{{ $termPage.Title }}</a></li>
+					{{- end -}}
+				</ul>
+			</div>
+		{{- end -}}
+	{{- end -}}
+</section>

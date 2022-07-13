@@ -90,6 +90,15 @@ h3 {
 .release-date {
 	font-style: italic;
 }
+.taxonomies ul {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0em;
+}
+.taxonomies li {
+	display: inline-block;
+	margin: 0em 0.25em;
+}
 .music-list {
 	list-style-type: none;
 	padding: 0em;
