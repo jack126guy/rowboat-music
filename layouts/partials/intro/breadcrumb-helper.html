@@ -1,0 +1,10 @@
+{{- if .current.Parent -}}
+	{{- partial "intro/breadcrumb-helper" (dict "leaf" .leaf "current" .current.Parent) -}}
+{{- end -}}
+<li>
+	{{- if eq .leaf .current -}}
+		<b>{{ .current.Title }}</b>
+	{{- else -}}
+		<a href="{{ .current.RelPermalink }}">{{ .current.Title }}</a>
+	{{- end -}}
+</li>

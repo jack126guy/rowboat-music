@@ -49,6 +49,17 @@ a {
 	border-width: thin;
 	border-style: solid;
 }
+.breadcrumb-nav ol {
+	list-style-type: none;
+	padding: 0em;
+}
+.breadcrumb-nav li {
+	display: inline-block;
+}
+.breadcrumb-nav li:before {
+	content: "/";
+	margin: 0em 0.25em;
+}
 h1 {
 	font-size: 2em;
 	margin-top: 0.75em;
