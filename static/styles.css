@@ -49,6 +49,11 @@ a {
 	border-width: thin;
 	border-style: solid;
 }
+.breadcrumb-nav {
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	margin-bottom: 1.5em;
+}
 .breadcrumb-nav ol {
 	list-style-type: none;
 	padding: 0em;
