@@ -94,10 +94,14 @@ h3 {
 	display: inline-block;
 	list-style-type: none;
 	padding: 0em;
+	margin: 0em;
 }
 .taxonomies li {
 	display: inline-block;
-	margin: 0em 0.25em;
+	margin: 0.5em 0.25em;
+	padding: 0.25em;
+	border-width: thin;
+	border-style: solid;
 }
 .music-list {
 	list-style-type: none;
