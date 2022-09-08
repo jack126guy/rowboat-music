@@ -10,6 +10,9 @@ p, ul, ol {
 a {
 	text-decoration: none;
 }
+a:hover, a:focus {
+	text-decoration: underline;
+}
 .skip-to-main {
 	position: absolute;
 	width: 25%;
