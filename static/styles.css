@@ -101,8 +101,8 @@ h3 {
 	padding: 0em;
 }
 .music-list li {
-	height: 10em;
-	margin: 1em 0em;
+	height: 11.25em;
+	margin: 0.75em 0em;
 	overflow: hidden;
 }
 .music-list li div {
@@ -110,7 +110,7 @@ h3 {
 }
 .music-list-cover {
 	float: left;
-	width: 10em;
+	width: 11.25em;
 	margin-right: 1em;
 }
 .music-list-cover img {
