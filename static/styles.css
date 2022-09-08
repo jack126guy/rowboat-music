@@ -37,6 +37,14 @@ a:hover, a:focus {
 	font-size: 2em;
 	margin-top: 0em;
 }
+.site-logo {
+	display: block;
+	text-align: center;
+	height: 4.5em;
+}
+.site-logo img {
+	height: 100%;
+}
 .main-nav ul {
 	list-style-type: none;
 	padding: 0em;
