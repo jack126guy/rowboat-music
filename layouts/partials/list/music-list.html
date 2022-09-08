@@ -1,6 +1,6 @@
 <ul class="music-list">
 	{{- range . -}}
-		<li class="music-list-item">
+		<li>
 			<a href="{{ .RelPermalink }}">
 				<div class="music-list-cover"><img src="{{ partial "util/get-cover-url.html" . }}" alt=""/></div>
 				<div>{{ .Title }}</div>

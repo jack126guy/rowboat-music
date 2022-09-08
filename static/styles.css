@@ -100,12 +100,12 @@ h3 {
 	list-style-type: none;
 	padding: 0em;
 }
-.music-list-item {
+.music-list li {
 	height: 10em;
 	margin: 1em 0em;
 	overflow: hidden;
 }
-.music-list-item div {
+.music-list li div {
 	height: 100%;
 }
 .music-list-cover {
