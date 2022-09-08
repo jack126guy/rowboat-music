@@ -1,0 +1,10 @@
+{{- $icon := "" -}}
+{{- with .Site.Params.logo -}}
+	{{- $icon = relURL . -}}
+{{- end -}}
+{{- with .Site.Params.favicon -}}
+	{{- $icon = relURL . -}}
+{{- end -}}
+{{- with $icon -}}
+	<link rel="icon" href="{{ . }}"/>
+{{- end -}}
