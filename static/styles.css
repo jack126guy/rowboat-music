@@ -123,6 +123,8 @@ h3 {
 }
 .pagination * {
 	display: inline-block;
+	width: 100%;
+	left: 0em;
 }
 .pagination-current {
 	width: 100%;
@@ -130,7 +132,6 @@ h3 {
 }
 .pagination-previous {
 	position: absolute;
-	left: 0em;
 	text-align: left;
 }
 .pagination-previous a:before {
@@ -138,7 +139,6 @@ h3 {
 }
 .pagination-next {
 	position: absolute;
-	right: 0em;
 	text-align: right;
 }
 .pagination-next a:after {
