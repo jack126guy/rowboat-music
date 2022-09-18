@@ -123,22 +123,20 @@ h3 {
 }
 .pagination * {
 	display: inline-block;
+	position: absolute;
 	width: 100%;
 	left: 0em;
 }
 .pagination-current {
-	width: 100%;
 	text-align: center;
 }
 .pagination-previous {
-	position: absolute;
 	text-align: left;
 }
 .pagination-previous a:before {
 	content: "\2190  ";
 }
 .pagination-next {
-	position: absolute;
 	text-align: right;
 }
 .pagination-next a:after {
