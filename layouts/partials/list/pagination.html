@@ -1,4 +1,4 @@
-<section class="pagination">
+<nav class="pagination">
 	<div class="pagination-current">Page {{ .PageNumber }}/{{ .TotalPages }}</div>
 	{{- if .HasPrev -}}
 		<div class="pagination-previous"><a href="{{ .Prev.URL }}">Newer</a></div>
@@ -6,4 +6,4 @@
 	{{- if .HasNext -}}
 		<div class="pagination-next"><a href="{{ .Next.URL }}">Older</a></div>
 	{{- end -}}
-</section>
+</nav>
