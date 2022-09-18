@@ -143,12 +143,24 @@ h3 {
 .pagination-previous a:before {
 	content: "\2190  ";
 }
+[dir=rtl] .pagination-previous {
+	text-align: right;
+}
+[dir=rtl] .pagination-previous a:before {
+	content: "\2192  ";
+}
 .pagination-next {
 	right: 0em;
 	text-align: right;
 }
 .pagination-next a:after {
 	content: " \2192";
+}
+[dir=rtl] .pagination-next {
+	text-align: left;
+}
+[dir=rtl] .pagination-next a:after {
+	content: " \2190";
 }
 @media print {
 	body {
