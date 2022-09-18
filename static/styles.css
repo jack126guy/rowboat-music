@@ -116,6 +116,11 @@ h3 {
 	overflow: hidden;
 	text-align: center;
 }
+[dir=rtl] .music-list-cover {
+	float: right;
+	margin-left: 1em;
+	margin-right: 0em;
+}
 .music-list-cover img {
 	height: 100%;
 	margin: 0% -50%;
