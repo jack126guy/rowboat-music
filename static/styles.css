@@ -111,6 +111,7 @@ h3 {
 .music-list-cover {
 	float: left;
 	width: 11.25em;
+	max-width: 50%;
 	margin-right: 1em;
 }
 .music-list-cover img {
