@@ -1,4 +1,4 @@
-{{- $cover := relURL "default_cover.png" -}}
+{{- $cover := "" -}}
 {{- with .Parent -}}
 	{{- $cover = partial "util/get-cover-url.html" . -}}
 {{- end -}}

@@ -1,1 +1,3 @@
-<div class="main-cover"><img src="{{ partial "util/get-cover-url.html" . }}" alt="Cover art"/></div>
+{{- with partial "util/get-cover-url.html" . -}}
+	<div class="main-cover"><img src="{{ . }}" alt="Cover art"/></div>
+{{- end -}}
