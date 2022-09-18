@@ -144,6 +144,8 @@ h3 {
 	content: "\2190  ";
 }
 [dir=rtl] .pagination-previous {
+	right: 0em;
+	left: auto;
 	text-align: right;
 }
 [dir=rtl] .pagination-previous a:before {
@@ -157,6 +159,8 @@ h3 {
 	content: " \2192";
 }
 [dir=rtl] .pagination-next {
+	left: 0em;
+	right: auto;
 	text-align: left;
 }
 [dir=rtl] .pagination-next a:after {
