@@ -87,11 +87,13 @@ h3 {
 	margin-bottom: 0.75em;
 }
 .main-cover {
-	height: 22.5em;
-	text-align: center;
+	width: 18em;
+	max-width: 100%;
+	margin: 0em auto;
 }
 .main-cover img {
-	height: 100%;
+	display: block;
+	width: 100%;
 }
 .release-date {
 	font-style: italic;
