@@ -103,24 +103,20 @@ h3 {
 	padding: 0em;
 }
 .music-list li {
-	height: 11.25em;
 	margin: 0.75em 0em;
 	overflow: hidden;
 }
-.music-list li div {
-	height: 100%;
-}
 .music-list-cover {
 	float: left;
-	width: 11.25em;
+	width: 9em;
 	max-width: 50%;
+	height: 9em;
 	margin-right: 1em;
 	overflow: hidden;
 	text-align: center;
 }
 .music-list-cover img {
-	height: 100%;
-	margin: 0% -50%;
+	width: 100%;
 }
 .pagination {
 	position: relative;
