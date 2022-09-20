@@ -31,6 +31,10 @@ References are lists of links to other pages, such as a track list for an album.
 
 (More detailed documentation is needed. For now, refer to the example site for information on using the reference system.)
 
+## Versioning
+
+This theme uses [Semantic Versioning](https://semver.org/). The API refers to page and site parameters, layouts (including partials), overall page structure, and class names (for styling). Backwards compatibility does not mean that the appearance or markup will necessarily remain the same, but rather that parameters, custom layouts, and custom styles should still work as intended.
+
 ## License
 
 Rowboat Music is available under the MIT License. Refer to `LICENSE.txt` for details.
